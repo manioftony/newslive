@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<h1 style="text-align: center;">64 BIT LIVE NEWS</h1>
+<h3 style="text-align: center;">{{obj_news}}</h3>
+
+<form action="" method="post">
+<label>Select News</label>
+<select name="news">
+    <option value="Times of India News">Times of india</option>
+    <option value="Bbc News">BBC</option>
+    <option value="Hindu News">Hindu</option>
+    <option value="Sports News">Sports</option>
+</select>
+<input type="submit" value="Submit">
+
+</form>
+
+
+{% for i in obj_data %}
+    <h1>{{i.title}}</h1>
+    <h6>{{i.description}}</h6>
+    <img src="{{i.urlToImage}}" alt="">
+    <a href="{{i.url}}" "email me">Show More</a>
+    <li>Published Date:{{i.publishedAt}}</li>
+{% endfor %}
+
+-------------------------------------------------
+</body>
+</html>
