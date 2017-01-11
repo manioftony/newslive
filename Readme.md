@@ -19,5 +19,4 @@ link:http://127.0.0.1:5000/
 
 https://newsapi.org/sources
 
-# Here Create your account for api
-# This is basic installation for Linux
+The API token will be generated from the above web link, and use the API into the newslive application to get live news.
